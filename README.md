@@ -6,6 +6,10 @@ Implementations of material-embedding and thermodynamic-function-learning models
 This defines a class which implements a **feed-forward neural network**, which is constrained to learn the parameters of a particular type of Gaussian kernel (i.e., inverted Gaussians centered at training points).
 It's intended to be used when you know, by assumption, that all training data should induce a type of negative Gaussian potential well, and that all training data represent observations of local minima in the function which you're trying to learn.
 
+After training, you'll have access to a single model:
+
+1. `thermo_net`, the learned function which outputs a single scalar value for each input
+
 Running this file as-is should generate a summary of an example default model architecture:
 
 ```
@@ -39,9 +43,9 @@ The class comes with some utility functions for saving and loading trained model
 
 After training, you'll have access to three models:
 
-0. `vae`, the full encoder-decoder
-0. `encoder`, the encoder into the latent vectors
-0. `decoder`, the decoder from the latent vectors
+1. `vae`, the full encoder-decoder
+1. `encoder`, the encoder into the latent vectors
+1. `decoder`, the decoder from the latent vectors
 
 Running this file as-is should generate a summary of an example default model architecture:
 
