@@ -78,4 +78,4 @@ You'll also generate the `material_vae.png` file, which shows this model archite
 
 ## synthesis_dataset.json
 
-This file catalogs the different TiO2 polymorphs listed in the Materials Project (at the time of writing), along with whether or not each polymorph has been experimentally verified or not (based on cross referencing against the Inorganic Crystal Structure Database).
+This file catalogs the different TiO2 polymorphs listed in the Materials Project (at the time of writing), along with whether or not each polymorph has been experimentally verified or not (based on cross referencing against the Inorganic Crystal Structure Database). You can make use of this dataset by cross-referencing the UUIDs against www.materialsproject.org.
